@@ -8,7 +8,7 @@ Quando("acesso o blog da Idwall") do
   end
   
   Então("deve exibir o post pesquisado em uma página de resultados") do
-    searchPage.checkUrl
-    searchPage.checkTitleBar
-    searchPage.checkArticleTitle
+    raise "Pesquisa não foi realizada com sucesso." unless searchPage.checkUrl == true
+    raise "Título não foi encontrado" unless searchPage.checkTitleBar == true
+    raise "Artigo não foi encontrado" unless searchPage.checkArticleTitle == true
   end
