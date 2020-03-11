@@ -212,9 +212,9 @@ Then categories are accessed
 Examples:
 
 |page|article|
-|2|5|
-|3|6|
+|1|1|
 |2|8|
+|3|5|
 
 @TechUpdates @authors
 Scenario Outline: Acessar autores dos artigos da seção Latest Tech Update e verificar que o redirecionamento correto acontece
