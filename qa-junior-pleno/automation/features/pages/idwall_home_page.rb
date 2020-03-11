@@ -11,7 +11,7 @@ class IdWallHomePage < SitePrism::Page
     section :header, HomeHeader, '.container'
 
     def checkUrl(url)
-        expect(page).to have_current_path(CONFIG['URL'], url: true)
+        return expect(page).to have_current_path(CONFIG['URL'], url: true)
     end    
 
     def searchArticle(article)
