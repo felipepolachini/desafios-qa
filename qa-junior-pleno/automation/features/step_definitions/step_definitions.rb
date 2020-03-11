@@ -1,6 +1,6 @@
 Quando("acesso o blog da Idwall") do
   home.load
-  home.checkUrl(CONFIG['URL'])
+  raise "Blog não foi acessado com sucesso." unless home.checkUrl(CONFIG['URL']) == true
   end
   
   Quando("pesquiso um post informando um título existente {string}") do |article|
